@@ -27,7 +27,7 @@ func SetupRedis() *redis.Client {
 func GetNeo4jDriver() (neo4j.Driver, error) {
 	uri := "bolt://localhost:7687" // Replace with your Neo4j URI
 	username := "neo4j"            // Replace with your Neo4j username
-	password := "15522345"         // Replace with your Neo4j password
+	password := "your_password"         // Replace with your Neo4j password
 
 	driver, err := neo4j.NewDriver(uri, neo4j.BasicAuth(username, password, ""))
 	if err != nil {
